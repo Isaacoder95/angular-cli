@@ -104,6 +104,6 @@ export function getBrowserConfig(wco: WebpackConfigOptions): webpack.Configurati
       }),
       ...extraPlugins,
     ],
-    node: false,
+    node: { crypto: true, stream: true },
   };
 }
